@@ -1,0 +1,48 @@
+﻿<section id="about" class="s-about target-section">
+
+    <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full text-center">
+            <h3>About</h3>
+            <h1>
+                @ViewBag.aboutTitle
+                @* More About Me *@</h1>
+            <p class="lead">@ViewBag.aboutSubDescription
+               @*  My name is Yelda. I was born in 2003. I live in Istanbul. I am interested in software. I love coding and technology! *@</p>
+        </div>
+    </div>
+
+    <div class="row about-content">
+
+        <div class="col-six tab-full left">
+            <div class="col-full text-center">
+            <h3>
+                Howdy! </h3>
+            </div>
+            <div class="col-full text-center">
+            <p>.NET FULLSTACK DEVELOPER.</p>
+            </div>
+			<p>
+				@ViewBag.aboutdetail
+				@*I graduated from Balıkesir University Computer Programming Department. During my education, I learned C, C#, Java, Python, SQL, Dart, PHP and JavaScript programming languages. I attended many seminars in artificial intelligence, software development and cyber security. I also have knowledge about HTML/CSS/JS, MSSQL, MS Office programs, .Net Core and Blazor. I think I am determined and ambitious. 
+
+                I believe that I will improve myself even more. My goal is to work in an institution that will develop me, to be beneficial to that institution and then to start a professional business life.*@
+			</p>
+        </div>
+        @await Component.InvokeAsync("_SkillComponentPartial")
+ <!-- end about-content -->
+
+    <div class="row about-content about-content--buttons">
+
+        <div class="col-six tab-full left">
+            <a href="#0" class="btn btn--primary full-width">Download My CV</a>
+        </div>
+        <div class="col-six tab-full right">
+            <a href="#0" class="btn full-width">Hire Me Now</a>
+        </div>
+
+    </div> <!-- end about-content buttons -->
+
+   @await Component.InvokeAsync("_ExperienceComponentPartial")
+    <!-- end about-content timeline -->
+
+</section>

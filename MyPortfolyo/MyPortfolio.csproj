@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\wwwroot\**" />
+    <Content Remove="wwwroot\wwwroot\**" />
+    <EmbeddedResource Remove="wwwroot\wwwroot\**" />
+    <None Remove="wwwroot\wwwroot\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\.DS_Store" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\css\ready.css.map" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\fonts\line-awesome.svg" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\fonts\line-awesome.woff2" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\core\bootstrap.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\core\jquery.3.2.1.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\core\popper.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\demo.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\ready.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\assets\js\ready.min.js" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\LICENSE" />
+    <None Include="wwwroot\Ready-Bootstrap-Dashboard-master\README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+		
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.5" />
+  </ItemGroup>
+
+</Project>

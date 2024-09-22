@@ -1,0 +1,41 @@
+﻿@model List<MyPortfolio.DAL.Entities.Skill>
+<div class="col-six tab-full right">
+
+    <h3>I've Got Some skills.</h3>
+
+    <ul class="skill-bars">
+        @foreach(var item in Model)
+        {
+            <li>
+            <div class="progress percent"><span>@item.Value%</span></div>
+            <strong>@item.Title</strong>
+      
+        </li>
+        }
+ 			@*<li>
+            <div class="progress percent75"><span>75%</span></div>
+            <strong>BLAZOR</strong>
+        </li>
+        <li>
+            <div class="progress percent90"><span>90%</span></div>
+            <strong>MVC/WEB API</strong>
+        </li>
+        <li>
+            <div class="progress percent70"><span>70%</span></div>
+            <strong>.NET/ASP.NET </strong>
+		</li>
+		<li>
+			<div class="progress percent90"><span>90%</span></div>
+			<strong>SQL</strong>
+		</li>
+		
+		<li>
+			<div class="progress percent75"><span>75%</span></div>
+			<strong>HTML/CSS</strong>
+		</li> *@
+
+
+    </ul>
+</div>
+
+ 
