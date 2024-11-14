@@ -88,13 +88,13 @@ namespace MyPortfolio.Migrations
                     b.ToTable("Contacts");
                 });
 
-            modelBuilder.Entity("MyPortfolio.DAL.Entities.Experience", b =>
+            modelBuilder.Entity("MyPortfolio.DAL.Entities.Experiance", b =>
                 {
-                    b.Property<int>("ExperienceId")
+                    b.Property<int>("ExperianceId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ExperienceId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ExperianceId"));
 
                     b.Property<string>("Date")
                         .IsRequired()
@@ -112,9 +112,9 @@ namespace MyPortfolio.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ExperienceId");
+                    b.HasKey("ExperianceId");
 
-                    b.ToTable("Experiences");
+                    b.ToTable("Experiances");
                 });
 
             modelBuilder.Entity("MyPortfolio.DAL.Entities.Feature", b =>
@@ -278,33 +278,6 @@ namespace MyPortfolio.Migrations
                     b.HasKey("TestimonialId");
 
                     b.ToTable("Testimonials");
-                });
-
-            modelBuilder.Entity("MyPortfolio.DAL.Entities.ToDoList", b =>
-                {
-                    b.Property<int>("ToDoListId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ToDoListId"));
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ToDoListId");
-
-                    b.ToTable("ToDoLists");
                 });
 #pragma warning restore 612, 618
         }

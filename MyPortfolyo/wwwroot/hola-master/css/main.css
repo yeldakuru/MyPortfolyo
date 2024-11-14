@@ -3505,7 +3505,6 @@ article.blog-single .blog-content {
     position: relative;
     color: rgba(255, 255, 255, 0.5);
     min-height: 50.4rem;
-
 }
 
 .page-header--single {
@@ -3524,7 +3523,6 @@ article.blog-single .blog-content {
     height: 100%;
     opacity: .75;
     background-color: #0D0A0B;
-   
 }
 
 .page-header::after {
@@ -3544,7 +3542,6 @@ article.blog-single .blog-content {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
     /* IE6-9 */
-
 }
 
 .page-header__content {

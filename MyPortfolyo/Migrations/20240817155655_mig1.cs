@@ -46,7 +46,7 @@ namespace MyPortfolio.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Experiences",
+                name: "Experiances",
                 columns: table => new
                 {
                     ExperianceId = table.Column<int>(type: "int", nullable: false)
@@ -166,7 +166,7 @@ namespace MyPortfolio.Migrations
                 name: "Contacts");
 
             migrationBuilder.DropTable(
-                name: "Experiences");
+                name: "Experiances");
 
             migrationBuilder.DropTable(
                 name: "Features");

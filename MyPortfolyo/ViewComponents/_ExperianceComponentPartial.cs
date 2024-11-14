@@ -2,8 +2,7 @@
 
 namespace MyPortfolio.ViewComponents
 {
-    public class _AboutComponentPartial:ViewComponent
-
+    public class _ExperianceComponentPartial:ViewComponent
     {
         public IViewComponentResult Invoke()
         {
